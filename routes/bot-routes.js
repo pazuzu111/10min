@@ -6,7 +6,10 @@ const chatRouter = express.Router();
 const botController = require('../controllers/bot-controller');
 
 //the url that we want the index controller to render data to
-chatRouter.get('/admin238476234629346', botController.index);
+chatRouter.get('/admin12348734587352870', botController.index);
+
+//the url that we want the index controller to render data to
+chatRouter.post('/admin', botController.create);
 
 //the url that we want the update controller to render data to
 chatRouter.put('/admin/:id', botController.update);

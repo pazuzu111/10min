@@ -11,8 +11,6 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="scripts/admin-script.js"></script>
-<!--         <script src="scripts/bundle.js"></script>
- -->
 </head>
 <body>
 
@@ -35,6 +33,14 @@
         <div id="list">BOT 4</div>
         <div id="list">BOT 5</div>
     </div>
+
+<!-- modal = add bot1 data -->
+    <form id="addData" action="/admin/" method="POST">
+        <input type="text" name="name" placeholder="name" />
+        <input type="text" name="message" placeholder="message" />
+
+        <input type="submit" id="add" value="Add row to db" />
+    </form>
 
 <!-- modal = show bot1 data -->
  <div id="message-container" class="msg-container">

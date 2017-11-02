@@ -141,3 +141,27 @@ button:hover{
     outline: none;
 }
 
+/*****************  create form  ******************/
+#addData{
+    display: none;
+    width: 350px;
+    margin: 25vh auto auto auto;
+}
+
+#add{
+    font-size: 1em;
+    border-radius: 3%;
+    background-color: #1a46a9;
+    color: black;
+    border:none;
+    outline: none;
+}
+
+#add:hover{
+    font-size: 1em;
+    border-radius: 3%;
+    background-color: black;
+    color: #1a46a9;
+    border:none;
+    outline: none;
+}

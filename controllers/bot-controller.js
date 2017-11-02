@@ -19,6 +19,19 @@ botController.index = (req, res) => {
     });
 };
 
+//controller calls create method
+botController.create = (req, res) => {
+  Messages.create({
+    name: req.body.name,
+    message: req.body.message,
+  }).then(message => {
+  })
+  .catch(err => {
+    console.log(err);
+    res.status(500).json;
+  });
+};
+
 //controller calls update method and sends alert
 botController.update = (req, res) => {
     Messages.update({

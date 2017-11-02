@@ -1,7 +1,6 @@
 console.log('connected')
 
 //****************************************
-
 //require ex, http, socket, port
 let ex = require('express');
 let app = ex();
