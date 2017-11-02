@@ -34,7 +34,7 @@ $(document).ready(function(){
 function runChat(){
 
 //wait 10 mins to kick user out
-setTimeout(off,40000)
+setTimeout(off,600000)
 
     $(()=> {
 
@@ -73,11 +73,10 @@ setTimeout(off,40000)
             for (let i=0; i < 9; i++)
             {
                 //pause 5 seconds before each append
-                setTimeout( function timer()
+                setTimeout(function timer()
                 {
                     //append to dom
                     $('#messages').append($('<li>').text(`${messages[i].name}: ${messages[i].message}`));
-
                 }, i*5000 );
             }
         });
