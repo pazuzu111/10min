@@ -1,5 +1,5 @@
+console.log('connected')
 
-//open modal on click
 $(document).ready(function(){
 
     //when list is clicked fade in modal
