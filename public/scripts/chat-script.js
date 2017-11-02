@@ -11,7 +11,7 @@ $(document).ready(function(){
         if (event.keyCode == 13)
         {
             //if value is null or empty
-            if(!this.value || this.value === " ")
+            if(!this.value || this.value == " ")
             {
                 //alert user for input
                 alert('you have to put in a username')
@@ -77,7 +77,7 @@ setTimeout(off,600000)
                 {
                     //append to dom
                     $('#messages').append($('<li>').text(`${messages[i].name}: ${messages[i].message}`));
-                }, i*5000 );
+                }, (i+1)*5000 );
             }
         });
     });
