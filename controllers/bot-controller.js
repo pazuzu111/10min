@@ -26,7 +26,6 @@ botController.update = (req, res) => {
         message: req.body.message,
         id:req.params.id})
     .then(message => {
-        alert('updated!!!')
     })
     .catch(err => {
         console.log(err);
@@ -38,7 +37,6 @@ botController.update = (req, res) => {
 botController.delete = (req, res) => {
     Messages.destroy(req.params.id)
     .then(() => {
-        alert('deleted!!!')
     })
     .catch(err => {
         res.status(500).json({
