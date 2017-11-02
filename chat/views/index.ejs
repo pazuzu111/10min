@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>chat app</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100|Source+Code+Pro:200" rel="stylesheet">
+    <link rel='stylesheet' type='text/css' href='/styles/index-style.css'>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="scripts/chat-script.js"></script>
+</head>
+<body>
+
+<!--********** username prompt page **************-->
+<div id="username-container">
+    <h1>10 MIN</h1>
+    <div class="form">
+        <h3 class="title">username?</h3>
+        <input class="usernameInput" type="text" maxlength="14"/>
+    </div>
+</div>
+
+<!--********** chat window **************-->
+<ul id="messages"></ul>
+    <form action="">
+      <input id="m" autocomplete="off"/><button>Send</button>
+    </form>
+
+</body>
+</html>

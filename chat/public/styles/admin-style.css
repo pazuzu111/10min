@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+}
+
+/***************** auth page ********************/
+.msg-container{
+    display:none;
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#auth{
+    display:block;
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: white;
+}
+
+/***************** admin dashboard ********************/
+body{
+    display: flex;
+    background-color: black;
+    text-align: center;
+}
+
+#side{
+    width:17vw;
+    height: 100vh;
+    background: -webkit-linear-gradient(359deg, #050505 0%, rgb(108, 106, 220) 100%);
+    background: -o-linear-gradient(359deg, #050505 0%, rgb(108, 106, 220) 100%);
+    background: linear-gradient(-89deg, #050505 0%, #1a46a9 100%);
+}
+
+#listContainer{
+    width: 350px;
+    margin: 25vh auto auto auto;
+}
+#list, #list2{
+    background: linear-gradient(174deg, #050505 -23%, #1a46a9 100%);
+    width: 350px;
+    margin: 11% auto 10px auto;
+    text-overflow: ellipsis;
+    font-size: 1.5em;
+    border-radius: 50px;
+    padding: 10px;
+    font-family: 'Cuprum', sans-serif;
+    color: black;
+}
+
+#list:hover, #list2:hover{
+    background: black;
+    width: 350px;
+    margin: 11% auto 10px auto;
+    text-overflow: ellipsis;
+    font-size: 1.5em;
+    border-radius: 50px;
+    padding: 10px;
+    font-family: 'Cuprum', sans-serif;
+    color: #1a46a9;
+}
+
+button{
+    font-size: 1em;
+    padding: 15%;
+    border-radius: 50%;
+    background-color: black;
+    color: #1a46a9;
+    border:none;
+    margin: 45vh auto;
+    outline: none;
+}
+
+button:hover{
+    font-size: 1em;
+    padding: 15%;
+    border-radius: 50%;
+    background-color: #1a46a9;
+    color: black;
+    border:none;
+    margin: 45vh auto;
+    outline: none;
+}
+
+
+/*****************  edit page  ******************/
+#listEdit{
+    background: linear-gradient(174deg, #050505 -23%, #1a46a9 100%);
+    width: 350px;
+    margin: 1% auto 10px auto;
+    text-overflow: ellipsis;
+    font-size: 1.5em;
+    border-radius: 50px;
+    padding: 10px;
+    font-family: 'Cuprum', sans-serif;
+    color: grey;
+    border: none;
+    display: flex;
+}
+
+#msg{
+    flex:3;
+}
+
+.update{
+    font-size: 1em;
+    border-radius: 3%;
+    background-color: black;
+    color: #1a46a9;
+    border:none;
+    outline: none;
+}
+
+.update:hover{
+    font-size: 1em;
+    border-radius: 3%;
+    background-color: #1a46a9;
+    color: black;
+    border:none;
+    outline: none;
+}
+
+.delete{
+    font-size: 1em;
+    border-radius: 3%;
+    background-color: transparent;
+    color: #1a46a9;
+    border:none;
+    outline: none;
+}
+
+.delete:hover{
+    font-size: 1em;
+    border-radius: 3%;
+    background-color: darkred;
+    color: white;
+    border:none;
+    outline: none;
+}
+

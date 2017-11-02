@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>admin</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel='stylesheet' type='text/css' href='/styles/admin-style.css'>
+    <link href="https://fonts.googleapis.com/css?family=Cuprum" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="scripts/admin-script.js"></script>
+</head>
+<body>
+
+<!--         admin authentication      -->
+<div id="auth">
+    <h3 class="title">key?</h3>
+        <input id="key" class="key" type="text" maxlength="14" />
+</div>
+
+<!--         admin dashboard      -->
+
+    <div id="side">
+        <button id="addBot">+</button>
+    </div>
+
+    <div id="listContainer">
+        <div id="list">BOT 1</div>
+        <div id="list2">BOT 2</div>
+        <div id="list">BOT 3</div>
+        <div id="list">BOT 4</div>
+        <div id="list">BOT 5</div>
+    </div>
+
+<!-- modal = show bot1 data -->
+ <div id="message-container" class="msg-container">
+    <% messages.forEach(message => { %>
+        <div id="msg">
+            <form id="botInfo" action="/admin/<%= message.id%>?_method=PUT" method="POST">
+                <input type="text" name="name" id="listEdit" value="<%= message.name %>"/>
+                <input type="text" name="message" id="listEdit"  value="<%= message.message %>"/>
+
+                <input class="update" type="submit" value="update" />
+            </form>
+            <form class="delete" action="/admin/<%= message.id%>?_method=DELETE" method="POST">
+                <input class="delete" type="submit" value="Delete">
+            </form>
+        </div>
+        <br>
+        <br>
+    <% }) %>
+</div>
+
+</body>
+</html>

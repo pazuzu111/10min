@@ -1,0 +1,106 @@
+
+/************** landing page ****************/
+h1{
+    color:#1a46a9;
+    font-size: 7.5em;
+    text-align: center;
+    font-family: 'Source Code Pro', monospace;
+}
+
+#username-container{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+.form{
+    height: 100px;
+    margin-top: -100px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 100%;
+}
+
+.form .usernameInput{
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #6b5858;
+    outline: none;
+    padding-bottom: 15px;
+    text-align: center;
+    width: 400px;
+}
+
+.title{
+    font-size: 200%;
+}
+
+.usernameInput{
+    font-size: 200%;
+    letter-spacing: 3px;
+}
+
+.title, .usernameInput{
+    color: #1a46a9;
+    font-weight: 100;
+    font-size: 30px;
+    padding-bottom: 39px;
+    font-family: 'Saira Extra Condensed', sans-serif;
+}
+
+/************** chat  ****************/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font: 13px Helvetica, Arial;
+    background-color: black;
+}
+
+form{
+    background: #000;
+    padding: 3px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: none;
+}
+
+form input{
+    border: 0;
+    padding: 10px;
+    width: 90%;
+    margin-right: .5%;
+    background-color: black;
+    color: #1a46a9;
+    border:solid 1px #1a46a9;
+}
+
+form button{
+    width: 9%;
+    background: #1a46a9;
+    border: none;
+    padding: 10px;
+}
+
+#messages{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#messages li{
+    padding: 5px 10px;
+    color:darkblue;
+    font-size: 20px;
+}
+
+#messages li:nth-child(odd){
+    background-color: #1a46a9;
+    color: black;
+}
