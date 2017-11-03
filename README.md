@@ -4,9 +4,13 @@
 however, you will be kicked off the server in 10 minutes 
 so do whatever you want, just make it fast...
 
+#user stories
+user lands on username prompt puts in username and can begin chatting
+
+#Platform
 built using express and websockets
 
-modules:
+#modules:
 
     "express": "^4.16.2",
     "jquery": "^3.2.1",
@@ -23,3 +27,6 @@ modules:
 if you want to run it just go to the website otherwise
 
 go clone your own repo!!!👺 👺
+
+#updates
+proxy coming soon,for extra sec i advise you to use a proxy before chatting
