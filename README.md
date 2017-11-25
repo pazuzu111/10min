@@ -8,7 +8,10 @@ so do whatever you want, just make it fast...
 user lands on username prompt puts in username and can begin chatting
 
 #Platform
-built using express and websockets
+
+built using 
+- express/node 
+- websockets(socket.io)
 
 #modules:
 
@@ -16,17 +19,13 @@ built using express and websockets
     "jquery": "^3.2.1",
     "body-parser": "^1.18.2",
     "cookie-parser": "^1.4.3",
-    "dotenv": "^4.0.0",
     "ejs": "^2.5.7",
-    "express-session": "^1.15.6",
     "method-override": "^2.3.10",
     "morgan": "^1.9.0",
     "pg-promise": "^7.0.3",
     "socket.io": "^2.0.4"
 
-if you want to run it just go to the website otherwise
-
-go clone your own repo!!!👺 👺
+site listed above 
 
 #updates
 proxy coming soon,for extra sec i advise you to use a proxy before chatting
