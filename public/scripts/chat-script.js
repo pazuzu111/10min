@@ -5,7 +5,7 @@ $(document).ready(function(){
 //***************** username input ******************
 
     //on keydown
-    $('.usernameInput').keydown(function(event) {
+    $('.usernameInput').keydown((e) => {
 
         //if enter key is pressed
         if (event.keyCode == 13)
@@ -31,7 +31,7 @@ $(document).ready(function(){
 
 //********************** chat ***********************
 
-function runChat(){
+function runChat() {
 
 //wait 10 mins to kick user out
 setTimeout(off,600000)
@@ -43,7 +43,7 @@ setTimeout(off,600000)
         let name = $('.usernameInput').val()
 
         //upon submit
-        $('form').submit(function(){
+        $('form').submit(() => {
 
             //put name and message inside for easy use
             const message = {
@@ -61,7 +61,7 @@ setTimeout(off,600000)
         });
 
         //on receive(chat)
-        socket.on('message', function(msg){
+        socket.on('message', (msg) => {
 
             //append to dom
             $('#messages').append($('<li>').text(`${msg.name}: ${msg.msg}`));
@@ -69,7 +69,7 @@ setTimeout(off,600000)
         });
 
         //on receive (bot)
-        socket.on('bot', function(messages){
+        socket.on('bot', (messages) => {
             for (let i=0; i < 9; i++)
             {
                 //pause 5 seconds before each append
@@ -85,7 +85,7 @@ setTimeout(off,600000)
 //*********************************************
 
 //kick user out of server, redirect to index
-function off(){
+function off() {
     window.location.href = "/";
     alert('Disengaging chat')
 }
